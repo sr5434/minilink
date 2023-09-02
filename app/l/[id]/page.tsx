@@ -8,7 +8,7 @@ type Params = {
 }
 
 export default async function Page({ params: { id } }: Params) {
-  const res = await fetch('http://localhost:3000/api/getRedirect', {
+  const res = await fetch('minilink-rosy.vercel.app/api/getRedirect', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
