@@ -13,7 +13,7 @@ export default function Home() {
 
   const submitHandler = async (e: any) => {
     e.preventDefault()
-    let res = await fetch('/api/shorten', {
+    let res = await fetch('https://minilink-rosy.vercel.app/api/shorten', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
