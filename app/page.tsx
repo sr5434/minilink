@@ -21,7 +21,7 @@ export default function Home() {
       body: `{"link":"${link}"}`
     });
     let resJson = await res.json();
-    await setShortLink(`localhost:3000/l/${resJson.linkID}`)
+    await setShortLink(`https://minilink-rosy.vercel.app/l/${resJson.linkID}`)
   }
 
   return (
